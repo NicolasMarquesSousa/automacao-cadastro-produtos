@@ -80,6 +80,12 @@ O repositório inclui `produtos_exemplo.csv`, uma amostra pequena com dados fict
 python -m unittest -v
 ```
 
+## Aula de referência
+
+O projeto nasceu na live **Aula 1 — Automações de tarefas e bots**, primeiro dia da Jornada Python da Hashtag Programação. A aula apresenta uma situação prática: automatizar o cadastro de centenas de produtos para reduzir trabalho manual e erros de digitação.
+
+[Assistir à live no YouTube](https://www.youtube.com/live/zbCFQY1a1M0?si=rIpEnClF-pTKDR-5)
+
 ## Tecnologias e conceitos
 
 Python · PyAutoGUI · pandas · CSV · pathlib · automação de processos · validação de dados · testes automatizados
