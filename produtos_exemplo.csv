@@ -1,0 +1,6 @@
+codigo,marca,tipo,categoria,preco_unitario,custo,obs
+MOEX000001,TechMouse,Mouse,1,79.90,35.00,
+TEEX000002,KeyPro,Teclado,1,149.90,70.00,Modelo ABNT2
+FOEX000003,AudioLab,Fone,2,119.90,52.00,
+WEEX000004,VisionCam,Webcam,2,229.90,105.00,Conferir estoque
+CAEX000005,ConnectPlus,Cabo USB-C,3,39.90,14.50,

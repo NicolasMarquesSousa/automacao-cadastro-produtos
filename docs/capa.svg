@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Automação de Cadastro de Produtos</title>
+  <desc id="desc">Capa azul com formulário, cursor e símbolos de automação em Python.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#081426"/><stop offset="1" stop-color="#163a67"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#020617" flood-opacity=".42"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1090" cy="70" r="220" fill="#2563eb" opacity=".12"/>
+  <circle cx="130" cy="590" r="250" fill="#22c55e" opacity=".08"/>
+  <rect x="72" y="64" width="12" height="502" rx="6" fill="url(#accent)"/>
+  <text x="124" y="146" fill="#7dd3fc" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">PYTHON • PYAUTOGUI • PANDAS</text>
+  <text x="124" y="218" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">Automação de</text>
+  <text x="124" y="282" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">Cadastro de</text>
+  <text x="124" y="346" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">Produtos</text>
+  <text x="124" y="397" fill="#bfdbfe" font-family="Segoe UI, Arial, sans-serif" font-size="24">Do CSV ao formulário web, automaticamente.</text>
+  <g transform="translate(706 120)" filter="url(#shadow)">
+    <rect width="398" height="354" rx="24" fill="#f8fafc"/>
+    <rect width="398" height="54" rx="24" fill="#e2e8f0"/>
+    <circle cx="30" cy="27" r="7" fill="#f87171"/><circle cx="52" cy="27" r="7" fill="#fbbf24"/><circle cx="74" cy="27" r="7" fill="#34d399"/>
+    <rect x="35" y="88" width="328" height="42" rx="9" fill="#e2e8f0"/><rect x="35" y="151" width="328" height="42" rx="9" fill="#e2e8f0"/>
+    <rect x="35" y="214" width="205" height="42" rx="9" fill="#e2e8f0"/><rect x="258" y="214" width="105" height="42" rx="9" fill="#dbeafe"/>
+    <rect x="220" y="287" width="143" height="40" rx="20" fill="#2563eb"/><text x="291" y="313" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">CADASTRAR</text>
+  </g>
+  <path d="M804 402l36 90 17-35 38 36 18-18-37-36 35-17z" fill="#22c55e" stroke="#052e16" stroke-width="5" stroke-linejoin="round"/>
+  <rect x="124" y="430" width="474" height="3" fill="url(#accent)"/>
+  <text x="124" y="486" fill="#dbeafe" font-family="Segoe UI, Arial, sans-serif" font-size="23">Automação de processos • Validação de dados • Segurança</text>
+  <text x="124" y="540" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="20">Projeto educacional desenvolvido por Nicolas Marques</text>
+</svg>
