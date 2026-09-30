@@ -32,6 +32,24 @@ class CarregarProdutosTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Colunas ausentes"):
             carregar_produtos(caminho)
 
+    def test_rejeita_campo_obrigatorio_vazio(self):
+        conteudo = """codigo,marca,tipo,categoria,preco_unitario,custo,obs
+ABC001,,Mouse,1,50.00,20.00,
+"""
+
+        with self.assertRaisesRegex(ValueError, "linha 2: marca"):
+            carregar_produtos(self.criar_csv(conteudo))
+
+    def test_preserva_codigo_e_valores_textuais(self):
+        conteudo = """codigo,marca,tipo,categoria,preco_unitario,custo,obs
+000123,Marca Teste,Mouse,01,50.00,20.00,
+"""
+        tabela = carregar_produtos(self.criar_csv(conteudo))
+
+        self.assertEqual(tabela.loc[0, "codigo"], "000123")
+        self.assertEqual(tabela.loc[0, "categoria"], "01")
+        self.assertEqual(tabela.loc[0, "preco_unitario"], "50.00")
+
 
 if __name__ == "__main__":
     unittest.main()
