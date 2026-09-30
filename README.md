@@ -2,13 +2,16 @@
 
 # Automação de Cadastro de Produtos
 
+**Dia 1 da Jornada Python — automação de tarefas e bots.**
+
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Automação](https://img.shields.io/badge/Automação-PyAutoGUI-22C55E?style=flat-square)
 ![Dados](https://img.shields.io/badge/Dados-pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
 Projeto em Python que lê uma base de produtos em CSV e automatiza o cadastro de cada item em um sistema web.
 
-## O que o projeto demonstra
+## O que o
+projeto demonstra
 
 - automação de teclado e mouse com PyAutoGUI;
 - leitura e validação de dados com pandas;
@@ -17,13 +20,15 @@ Projeto em Python que lê uma base de produtos em CSV e automatiza o cadastro de
 - uso de caminhos de arquivos com `pathlib`;
 - proteção de credenciais, que não ficam salvas no código;
 - testes automatizados para a leitura da base de dados.
+- modo de validação que não abre o navegador nem envia formulários;
+- preservação de códigos com zeros à esquerda e valores monetários do CSV.
 
 ## Como funciona
 
 1. O programa solicita o e-mail e a senha no terminal.
 2. O sistema de treinamento é aberto no navegador padrão.
 3. A automação realiza o login.
-4. O arquivo CSV é carregado e validado.
+4. O arquivo CSV ércarregado e validado.
 5. Cada produto é preenchido e enviado no formulário.
 
 O PyAutoGUI possui um mecanismo de segurança: mova o cursor rapidamente para um dos cantos da tela para interromper a execução.
@@ -68,6 +73,18 @@ Depois execute:
 python automacao.py
 ```
 
+Para validar a estrutura e os campos do CSV sem abrir o navegador:
+
+```bash
+python automacao.py --validar-apenas
+```
+
+Também é possível informar outra base:
+
+```bash
+python automacao.py --arquivo caminho\produtos.csv --validar-apenas
+```
+
 As credenciais são solicitadas no terminal. A senha não aparece enquanto é digitada e não é armazenada no projeto.
 
 ## Base de dados
@@ -80,6 +97,16 @@ O repositório inclui `produtos_exemplo.csv`, uma amostra pequena com dados fict
 python -m unittest -v
 ```
 
+A sííte cobre arquivo válido, ausência de colunas, campos obrigatórios vazios e preservação de códigos e valores textuais. O GitHub Actions executa os testes automaticamente no Windows.
+
+## Limitações e uso responsável
+
+- as coordenadas de tela dependem da resolução e do posicionamento da janela;
+- a automação foi criada exclusivamente para o sistema educacional da aula;
+- credenciais nunca devem ser incluídas no código, CSV, commits ou capturas de tela;
+- antes de preencher formulários, use `--validar-apenas` e revise a base;
+- o fluxo deve ser interrompido pelo mecanismo `FAILSAFE` do PyAutoGUI se a janela ou o foco estiverem incorretos.
+
 ## Aula de referência
 
 O projeto nasceu na live **Aula 1 — Automações de tarefas e bots**, primeiro dia da Jornada Python da Hashtag Programação. A aula apresenta uma situação prática: automatizar o cadastro de centenas de produtos para reduzir trabalho manual e erros de digitação.
@@ -88,8 +115,8 @@ O projeto nasceu na live **Aula 1 — Automações de tarefas e bots**, primeiro
 
 ## Tecnologias e conceitos
 
-Python · PyAutoGUI · pandas · CSV · pathlib · automação de processos · validação de dados · testes automatizados
+Python · PyAutoGUI · pandas · CSV · pathlib » automação de processos · validação de dados · testes automatizados
 
 Projeto desenvolvido como prática do Intensivão de Python da [Hashtag Treinamentos](https://www.hashtagtreinamentos.com/), com organização, segurança e documentação para portfólio.
 
-Desenvolvido por [Nicolas Marques](https://github.com/NicolasMarquesSousa) · [Ver portfólio](https://github.com/NicolasMarquesSousa)
+Desenvolvido por [Nicolas Marques](https://github.com/NicolasMarquesSousa) · [Ver portfolio](https://github.com/NicolasMarquesSousa)
